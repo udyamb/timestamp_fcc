@@ -35,7 +35,7 @@ if(invalidDate(newDate))
   res.json({unix:newDate.getTime(),utc:newDate.toUTCString()});
 });
 
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
   return res.json({unix:new Date().getTime(),utc:new Date.toUTCString()})
 })
 
